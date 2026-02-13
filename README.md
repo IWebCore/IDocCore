@@ -1,1 +1,3 @@
 # IDocCore
+
+> document of IWebCore.
