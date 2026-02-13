@@ -1,5 +1,7 @@
 # 安装 IMakeCore
 
+> 本文档描述如何安装 IMakeCore.
+
 ## 安装
 
 ### 预备安装环境
@@ -59,6 +61,8 @@ IMakeCore 的下载地址是 [IMakeCore.zip](./assets/IMakeCore-v0.0.1.zip) ，�
 
 在 linux 上安装 IMakeCore之后，如果在接下来的测试中没有响应，请重启 linux.
 
+IMakeCore使用的安装目录是 `/opt/IMakeCore`
+
 
 
 #### windows 安装 IMakeCore
@@ -77,11 +81,15 @@ windows 安装 IMakeCore 和linux的安装方式是一致的。
 
 安装脚本会拷贝文件和设置一些环境变量。执行完成之后用户就可以使用 IMakeCore了。
 
+IMakeCore 的安装目录是 `C:\Users\Yue\IMakeCore`. 也就是在用户目录下面。
+
 
 
 ## 测试安装情况
 
 IMakeCore 安装好了之后，可以在 bash 或者cmd 中执行 `ipc version` 这个命令测试是否安装成功。`ipc` 是内置在IMakeCore 中的一个默认的程序，在安装之后也被放置在环境变量中了。
+
+
 
 在linux中执行情况如下：
 
@@ -93,7 +101,9 @@ IMakeCore 安装好了之后，可以在 bash 或者cmd 中执行 `ipc version` 
 
 ![image-20260213212956744](assets/image-20260213212956744.png)
 
-此时 IMakeCore已经安装完成了。
+
+
+此时 IMakeCore已经安装完成了,用户可以接下来继续阅读关于IMakeCore的内容。
 
 
 

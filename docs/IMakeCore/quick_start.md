@@ -1,4 +1,4 @@
-# 介绍
+# IMakeCore介绍
 
 > 本文档是 IMakeCore 项目的快速入门指南。
 
@@ -41,8 +41,9 @@ IMakeCore 不是项目管理系统，而是建立在 `cmake` 或者 `qmake` 基�
     
     SOURCES += \
             main.cpp
-    
+
     ```
+
 === "main.cpp"
     ```cpp
     #include <QCoreApplication>

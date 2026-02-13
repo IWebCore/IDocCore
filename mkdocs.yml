@@ -112,6 +112,7 @@ nav:
   - IMake:
     - IMakeCore/quick_start.md
     - IMakeCore/install.md
+    - IMakeCore/usageDemo.md
     # - IMakeCore/features.md
     - IMakeCore/packageIntegration.md
     - IMakeCore/packages_json.md
