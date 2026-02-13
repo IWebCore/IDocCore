@@ -1,0 +1,194 @@
+site_name: IWebCore
+docs_dir: ./docs
+site_dir: ../project/IWebCore.github.io
+
+markdown_extensions:
+  - meta
+  - pymdownx.details:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+
+  - pymdownx.highlight:
+      use_pygments: true      # 使用Pygments进行高亮
+      linenums: true          # 如果需要行号
+      anchor_linenums: true   # 行号可链接
+  - pymdownx.superfences:     # 允许嵌套代码块等高级功能
+  - admonition  # 核心支持 !!! 语法
+  - pymdownx.details  # 可选：支持 ??? 折叠框
+  - attr_list
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.emoji
+
+nav:
+  - Home: index.md
+  - IHttp: 
+    - IHttpCore/quickstart.md
+    # - IHttpCore/overview.md  # 这个要删掉，不敢想这个是我写的东西！！！
+
+    
+    - controller:
+      - IHttpCore/controller/Controller定义.md
+      - IHttpCore/controller/IHttpCore 路由.md
+      - IHttpCore/controller/IHttpCore路由返回类型 基础类型.md
+      - IHttpCore/controller/IHttpCore路由返回类型 Response类型.md
+      - IHttpCore/controller/参数输入.md
+    
+    - components:
+      - IHttpCore/components/headers.md
+      - IHttpCore/components/cookie.md
+      - IHttpCore/components/session.md
+      - IHttpCore/components/json.md
+      - IHttpCore/components/formdata.md
+      - IHttpCore/components/multipart.md
+      - IHttpCore/components/request.md
+      - IHttpCore/components/response.md
+
+    - middleware:
+      - IHttpCore/middleware/overview.md
+
+    - biscuit:
+      - IHttpCore/biscuit/IHttpMime.md
+    - advance:
+      - IHttpCore/advance/https.md
+      
+      - IHttpCore/advance/INody.md
+      - IHttpCore/advance/invalid handler.md
+      - IHttpCore/advance/IHttpAssets.md
+      - IHttpCore/advance/IHttpCors.md
+      - IHttpCore/advance/IHttp.compress.md
+      - IHttpCore/notice.md
+      - IHttpCore/advance/linuxCompile.md
+      
+      # - session:
+      #   - IHttpCore/session/Session 接口.md
+      #   - IHttpCore/session/CachedSession.md
+
+  - ICmd:
+    - ICmd/overview.md
+    - ICmd/install.md
+    - ICmd/cmdrules.md
+    - ICmd/cmdAction.md
+    - ICmd/cmdArgs.md
+    - ICmd/cmdArgx.md
+    - ICmd/cmdOption.md
+    - ICmd/cmdOptionValue.md
+    - ICmd/api.md
+
+  - IRdb:
+    - IRdbCore/quick_start.md
+    - IRdbCore/overview.md
+    - IRdbCore/database/数据库.md
+    - IRdbCore/entity/Table.md
+    - IRdbCore/entity/View.md
+    # - IRbdCore/entity/IRdbValueGeneratorInterface.md
+    - IRdbCore/model/Table Model.md
+    - IRdbCore/model/View Model.md
+
+  - ICore:
+    - ICore/IApplication.md
+    - ICore/Config.md
+    - ICore/Bean.md
+    - ICore/Task.md
+    - ICore/Test.md
+    - 安全:
+      - ICore/安全策略.md
+      - ICore/IResult.md
+      - ICore/IException.md
+      - ICore/IAbort.md
+      - ICore/Abort-FailFast.md
+    - 其他:
+      - ICore/自定义数据类型 1.md
+      - ICore/自定义数据类型 2.md
+      - ICore/util/IPacakgeUtil.md
+      - ICore/architecture.md
+
+  - IMake:
+    - IMakeCore/quick_start.md
+    # - IMakeCore/features.md
+    - IMakeCore/packageIntegration.md
+    - IMakeCore/packages_json.md
+    - IMakeCore/configs_json.md
+    - IMakeCore/definePackage.md
+    - IMakeCore/ipc.md
+    - IMakeCore/ipubcore.md
+    - IMakeCore/wandering.md
+    
+theme:
+  name: material
+  language: zh
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+  features:
+    - navigation.instant
+    - navigation.instant.preview  # 显式声明该特性
+    - navigation.tabs
+    - header.autohide
+    - content.tabs.link
+    - content.code.annotate   # 如果需要行号等功能
+    - content.tabs  # 启用主题内置的选项卡样式
+
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: 深色模式
+    - scheme: slate
+      primary: deep purple
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: 浅色模式
+
+plugins:
+  - mermaid2
+  - section-index
+  - autorefs:
+      types:
+        - heading          # 自动给所有标题添加锚点
+  # - i18n:
+  #     default_language: zh
+  #     languages:
+  #       zh: 中文
+  #       en: English
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_themed: false
+      auto_caption: false
+      caption_position: bottom
+      background: white
+      shadow: true
+      manual: false
+
+# extra:
+#   alternate:
+#     - name: 中文
+#       link: /
+#       lang: zh
+#     - name: English
+#       link: /en/
+#       lang: en
+
+plugins:
+  - search:
+      lang: zh
+    
