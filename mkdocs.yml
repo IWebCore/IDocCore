@@ -1,6 +1,6 @@
 site_name: IWebCore
 docs_dir: ./docs
-site_dir: ../project/IWebCore.github.io
+site_dir: ../IWebCore.github.io
 
 markdown_extensions:
   - meta
