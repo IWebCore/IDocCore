@@ -10,3 +10,7 @@ IMakeCore 是一款基于c++源代码，跨平台的，建立在 cmake和 qmake 
 
 
 
+IWebCore github地址： [https://github.com/IWebCore/IMakeCore](https://github.com/IWebCore/IMakeCore) 欢迎 star, issues !
+
+
+
