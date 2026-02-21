@@ -115,6 +115,7 @@ nav:
     - IMakeCore/usageDemo.md
     - IMakeCore/usageDemo2.md
     - IMakeCore/usageDemo3.md
+    - IMakeCore/createPackages.md
     # - IMakeCore/features.md
     - IMakeCore/packageIntegration.md
     - IMakeCore/packages_json.md
