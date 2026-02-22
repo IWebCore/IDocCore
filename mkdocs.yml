@@ -117,13 +117,14 @@ nav:
     - IMakeCore/usageDemo3.md
     - IMakeCore/createPackages.md
     - IMakeCore/libstores.md
+    - IMakeCore/packageServer.md
     # - IMakeCore/features.md
     - IMakeCore/packageIntegration.md
     - IMakeCore/packages_json.md
     - IMakeCore/configs_json.md
     - IMakeCore/definePackage.md
     - IMakeCore/ipc.md
-    - IMakeCore/ipubcore.md
+    # - IMakeCore/ipubcore.md
     - IMakeCore/wandering.md
     
 theme:
