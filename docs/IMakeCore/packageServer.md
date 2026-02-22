@@ -149,9 +149,7 @@ C:\Users\Yue>ipc package install -- yuekeyuan/yyjson
  \___/  \/  \/  \___||_.__/  \____/ \___/ |_|   \___|
 
 download from server:  http://115.191.52.106
-QIODevice::write (QFile, "C:\Users\Yue\IMakeCore\.cache\yuekeyuan\yyjson@0.11.1.zip"): device not open
-package installed. Name: yuekeyuan@yyjson Version: 0.11.1
-
+package installed. Name: yuekeyuan/yyjson Version: 0.11.1
 ```
 
 此时，`yuekeyuan@yyjson` 这个包就安装好了。
