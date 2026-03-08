@@ -158,16 +158,26 @@ theme:
         name: 浅色模式
 
 plugins:
+  - search:
+      lang: zh
   - mermaid2
   - section-index
   - autorefs:
       types:
         - heading          # 自动给所有标题添加锚点
-  # - i18n:
-  #     default_language: zh
-  #     languages:
-  #       zh: 中文
-  #       en: English
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: zh
+          default: true
+          name: 简体中文
+          build: true
+        - locale: en
+          name: English
+          build: true
   - glightbox:
       touchNavigation: true
       loop: false
@@ -186,16 +196,10 @@ plugins:
       shadow: true
       manual: false
 
-# extra:
-#   alternate:
-#     - name: 中文
-#       link: /
-#       lang: zh
-#     - name: English
-#       link: /en/
-#       lang: en
+  - minify:
+      minify_html: true
+      minify_css: true
+      minify_js: true
+  - page_toggle
 
-plugins:
-  - search:
-      lang: zh
     
