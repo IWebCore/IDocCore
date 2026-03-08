@@ -18,6 +18,7 @@ markdown_extensions:
       use_pygments: true      # 使用Pygments进行高亮
       linenums: true          # 如果需要行号
       anchor_linenums: true   # 行号可链接
+      pygments_lang_class: true   # 启用语言类名
   - pymdownx.superfences:     # 允许嵌套代码块等高级功能
   - admonition  # 核心支持 !!! 语法
   - pymdownx.details  # 可选：支持 ??? 折叠框
@@ -135,13 +136,15 @@ theme:
       link: /en/
       lang: en
   features:
-    - navigation.instant
-    - navigation.instant.preview  # 显式声明该特性
+    # - navigation.instant
+    # - navigation.instant.preview  # 显式声明该特性
     - navigation.tabs
     - header.autohide
     - content.tabs.link
     - content.code.annotate   # 如果需要行号等功能
     - content.tabs  # 启用主题内置的选项卡样式
+    - content.code.copy
+
 
   palette:
     - scheme: default
@@ -162,9 +165,7 @@ plugins:
       lang: zh
   - mermaid2
   - section-index
-  - autorefs:
-      types:
-        - heading          # 自动给所有标题添加锚点
+  - autorefs
   - i18n:
       docs_structure: folder
       fallback_to_default: true
@@ -201,5 +202,9 @@ plugins:
       minify_css: true
       minify_js: true
   - page_toggle
+
+  - pygments:
+      light: "default"   # 明亮模式下的主题
+      dark: "native"     # 暗黑模式下的主题
 
     
